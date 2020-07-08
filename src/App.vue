@@ -7,9 +7,11 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import { validationMixin } from 'vuelidate'
 
 export default {
   name: 'App',
+  mixins: [validationMixin],
   components: {
     HelloWorld
   }
